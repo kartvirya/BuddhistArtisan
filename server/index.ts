@@ -75,25 +75,19 @@ if (process.env.STRIPE_SECRET_KEY) {
     serveStatic(app);
   }
 
-  // In development, serve on port 5000
-  // In production (Vercel), we don't need to specify a port
-  if (process.env.NODE_ENV !== 'production') {
-    const port = process.env.PORT || 5000;
-    try {
-      server.listen(port, () => {
-        log(`serving on port ${port}`);
-      });
-    } catch (error: any) {
-      if (error.code === "EADDRINUSE") {
-        log(
-          `Port ${port} is already in use. Please try a different port or kill the process using this port.`,
-        );
-        process.exit(1);
-      }
-      throw error;
+  // Always listen on a port (required for Render)
+  const port = process.env.PORT || 5000;
+  try {
+    server.listen(port, () => {
+      log(`serving on port ${port}`);
+    });
+  } catch (error: any) {
+    if (error.code === "EADDRINUSE") {
+      log(
+        `Port ${port} is already in use. Please try a different port or kill the process using this port.`,
+      );
+      process.exit(1);
     }
-  } else {
-    // In production, export the Express app for serverless functions
-    log('Running in production mode');
+    throw error;
   }
 })();

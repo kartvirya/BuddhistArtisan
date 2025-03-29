@@ -1,0 +1,57 @@
+
+Search
+
+Live tail
+GMT+5:45
+
+
+==> Cloning from https://github.com/kartvirya/BuddhistArtisan
+==> Checking out commit e49eba499c164c3d1e446bbbb3a440de4ab42992 in branch main
+==> Using Node.js version 22.12.0 (default)
+==> Docs on specifying a Node.js version: https://render.com/docs/node-version
+==> Using Bun version 1.1.0 (default)
+==> Docs on specifying a bun version: https://render.com/docs/bun-version
+==> Running build command 'npm install; npm run build'...
+added 569 packages, and audited 570 packages in 13s
+106 packages are looking for funding
+  run `npm fund` for details
+8 moderate severity vulnerabilities
+To address issues that do not require attention, run:
+  npm audit fix
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+Run `npm audit` for details.
+> rest-express@1.0.0 build
+> vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+vite v5.4.14 building for production...
+transforming...
+✓ 1740 modules transformed.
+rendering chunks...
+computing gzip size...
+../dist/public/index.html                   2.20 kB │ gzip:   0.90 kB
+../dist/public/assets/index-B-Jf53-A.css   67.04 kB │ gzip:  11.76 kB
+../dist/public/assets/index-C7647Vd-.js   464.25 kB │ gzip: 137.61 kB
+✓ built in 3.77s
+  dist/index.js  25.6kb
+⚡ Done in 4ms
+==> Uploading build...
+==> Uploaded in 7.8s. Compression took 3.5s
+==> Build successful 🎉
+==> Deploying...
+==> Running 'npm run start'
+> rest-express@1.0.0 start
+> NODE_ENV=production node dist/index.js
+STRIPE_SECRET_KEY not found, payment functionality will not work properly
+5:15:33 PM [express] Running in production mode
+==> Running 'npm run start'
+> rest-express@1.0.0 start
+> NODE_ENV=production node dist/index.js
+STRIPE_SECRET_KEY not found, payment functionality will not work properly
+5:15:46 PM [express] Running in production mode
+==> Running 'npm run start'
+> rest-express@1.0.0 start
+> NODE_ENV=production node dist/index.js
+STRIPE_SECRET_KEY not found, payment functionality will not work properly
+5:16:12 PM [express] Running in production mode
+==> No open ports detected, continuing to scan...
+==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
