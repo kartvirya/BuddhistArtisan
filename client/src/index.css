@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  
+  :root {
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Poppins', sans-serif;
+  }
+}
+
+/* Buddhist E-commerce custom styling */
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-sans {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Custom hover effects */
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero image styling */
+.hero-image {
+  background-position: center;
+  background-size: cover;
+}
+
+/* Define theme colors */
+:root {
+  --gold: #D4AF37;
+  --maroon: #800000;
+  --beige: #F5F5DC;
+  --offwhite: #FAFAF5;
+  --darkbrown: #3A3238;
+}
