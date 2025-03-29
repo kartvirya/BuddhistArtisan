@@ -13,7 +13,13 @@ const stripe = process.env.STRIPE_SECRET_KEY ?
   new Stripe(process.env.STRIPE_SECRET_KEY, { apiVersion: "2025-02-24.acacia" }) : 
   undefined;
 
+// Create a health check route for Vercel
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Health check endpoint for Vercel
+  app.get("/api/health", (req, res) => {
+    res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() });
+  });
+  
   // Products API
   app.get("/api/products", async (req, res) => {
     try {
