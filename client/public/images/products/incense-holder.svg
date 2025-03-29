@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#f5f5f5"/>
+  <rect x="220" y="350" width="160" height="40" rx="5" ry="5" fill="#d0d0d0"/>
+  <ellipse cx="300" cy="350" rx="80" ry="10" fill="#c0c0c0"/>
+  <path d="M300,350 L300,200" stroke="#c0c0c0" stroke-width="3"/>
+  <path d="M300,200 L320,150" stroke="#c0c0c0" stroke-width="3"/>
+  <path d="M320,150 L325,155" stroke="#c0c0c0" stroke-width="1"/>
+  <path d="M325,155 L330,145" stroke="#c0c0c0" stroke-width="1"/>
+  <path d="M330,145 L335,155" stroke="#c0c0c0" stroke-width="1"/>
+  <circle cx="300" cy="330" r="10" fill="#e0e0e0"/>
+  <rect x="290" y="340" width="20" height="10" fill="#e0e0e0"/>
+  <text x="300" y="550" font-family="serif" font-size="24" text-anchor="middle" fill="#666">Wooden Incense Holder</text>
+</svg>

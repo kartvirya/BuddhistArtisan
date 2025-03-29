@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <rect width="500" height="500" fill="#f5f5f5"/>
+  <path d="M250,100 C200,100 180,160 180,250 C180,320 200,380 250,380 C300,380 320,320 320,250 C320,160 300,100 250,100 Z" fill="#c8e6c9"/>
+  <circle cx="250" cy="160" r="40" fill="#a5d6a7"/>
+  <path d="M180,250 C200,270 220,290 250,290 C280,290 300,270 320,250" fill="none" stroke="#81c784" stroke-width="6"/>
+  <path d="M200,200 C220,230 280,230 300,200" fill="none" stroke="#81c784" stroke-width="4"/>
+  <circle cx="225" cy="180" r="5" fill="#2e7d32"/>
+  <circle cx="275" cy="180" r="5" fill="#2e7d32"/>
+  <text x="250" y="450" font-family="serif" font-size="24" text-anchor="middle" fill="#2e7d32">Green Tara</text>
+</svg>

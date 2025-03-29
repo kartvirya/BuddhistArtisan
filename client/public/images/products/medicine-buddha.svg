@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#f5f5f5"/>
+  <circle cx="300" cy="200" r="100" fill="#e0e0e0"/>
+  <path d="M250,200 C270,180 330,180 350,200" fill="none" stroke="#d0d0d0" stroke-width="3"/>
+  <circle cx="270" cy="180" r="7" fill="#c0c0c0"/>
+  <circle cx="330" cy="180" r="7" fill="#c0c0c0"/>
+  <path d="M300,330 Q250,350 250,400 Q300,430 350,400 Q350,350 300,330 Z" fill="#e0e0e0"/>
+  <path d="M250,200 L250,400" stroke="#d0d0d0" stroke-width="3" fill="none"/>
+  <path d="M350,200 L350,400" stroke="#d0d0d0" stroke-width="3" fill="none"/>
+  <rect x="265" y="330" width="70" height="70" rx="10" fill="#d0d0d0"/>
+  <text x="300" y="550" font-family="serif" font-size="24" text-anchor="middle" fill="#666">Medicine Buddha Statue</text>
+</svg>

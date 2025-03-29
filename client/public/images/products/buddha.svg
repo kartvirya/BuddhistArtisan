@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <rect width="500" height="500" fill="#f5f5f5"/>
+  <path d="M250,100 C180,100 150,180 150,250 C150,320 180,380 250,380 C320,380 350,320 350,250 C350,180 320,100 250,100 Z" fill="#e0e0e0"/>
+  <circle cx="250" cy="180" r="50" fill="#d0d0d0"/>
+  <ellipse cx="250" cy="280" rx="60" ry="40" fill="#d0d0d0"/>
+  <text x="250" y="450" font-family="serif" font-size="24" text-anchor="middle" fill="#666">Medicine Buddha</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#f5f5f5"/>
+  <path d="M300,180 C150,180 150,420 300,420 C450,420 450,180 300,180 Z" fill="none" stroke="#d0d0d0" stroke-width="3"/>
+  <circle cx="300" cy="180" r="15" fill="#e0e0e0"/>
+  <circle cx="270" cy="185" r="15" fill="#e0e0e0"/>
+  <circle cx="242" cy="200" r="15" fill="#e0e0e0"/>
+  <circle cx="220" cy="225" r="15" fill="#e0e0e0"/>
+  <circle cx="205" cy="255" r="15" fill="#e0e0e0"/>
+  <circle cx="200" cy="290" r="15" fill="#e0e0e0"/>
+  <circle cx="205" cy="325" r="15" fill="#e0e0e0"/>
+  <circle cx="220" cy="355" r="15" fill="#e0e0e0"/>
+  <circle cx="242" cy="380" r="15" fill="#e0e0e0"/>
+  <circle cx="270" cy="395" r="15" fill="#e0e0e0"/>
+  <circle cx="300" cy="400" r="15" fill="#e0e0e0"/>
+  <circle cx="330" cy="395" r="15" fill="#e0e0e0"/>
+  <circle cx="358" cy="380" r="15" fill="#e0e0e0"/>
+  <circle cx="380" cy="355" r="15" fill="#e0e0e0"/>
+  <circle cx="395" cy="325" r="15" fill="#e0e0e0"/>
+  <circle cx="400" cy="290" r="15" fill="#e0e0e0"/>
+  <circle cx="395" cy="255" r="15" fill="#e0e0e0"/>
+  <circle cx="380" cy="225" r="15" fill="#e0e0e0"/>
+  <circle cx="358" cy="200" r="15" fill="#e0e0e0"/>
+  <circle cx="330" cy="185" r="15" fill="#e0e0e0"/>
+  <text x="300" y="550" font-family="serif" font-size="24" text-anchor="middle" fill="#666">Mala Prayer Beads</text>
+</svg>

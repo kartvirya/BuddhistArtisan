@@ -122,7 +122,7 @@ export class MemStorage implements IStorage {
         discountedPrice: null,
         sku: "MB-001",
         category: "buddhas",
-        images: ["https://images.unsplash.com/photo-1566873535350-a3f5d4a6e43d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80", "https://images.unsplash.com/photo-1610037944410-3a03697ec8e6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80", "https://images.unsplash.com/photo-1600077106724-946750eeaf3c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80"],
+        images: ["/images/products/medicine-buddha.svg", "/images/products/medicine-buddha.svg"],
         material: "Copper with turquoise",
         dimensions: "Height: 20cm, Width: 15cm, Depth: 12cm",
         weight: "1.5kg",
@@ -139,7 +139,7 @@ export class MemStorage implements IStorage {
         discountedPrice: null,
         sku: "SB-001",
         category: "singing-bowls",
-        images: ["https://images.unsplash.com/photo-1580502088924-fbd827d8b736?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80", "https://images.unsplash.com/photo-1593248514630-6feb79a9d7d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80"],
+        images: ["/images/products/singing-bowl.svg", "/images/products/singing-bowl.svg"],
         material: "Seven-metal alloy",
         dimensions: "Diameter: 12cm, Height: 6cm",
         weight: "0.8kg",
@@ -156,7 +156,7 @@ export class MemStorage implements IStorage {
         discountedPrice: null,
         sku: "GT-001",
         category: "bodhisattvas",
-        images: ["https://images.unsplash.com/photo-1558626056-c993f101d505?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80", "https://images.unsplash.com/photo-1585848705532-c999dcd95557?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80"],
+        images: ["/images/products/green-tara.svg", "/images/products/green-tara.svg"],
         material: "Brass with gold plating",
         dimensions: "Height: 25cm, Width: 18cm, Depth: 15cm",
         weight: "2.2kg",
@@ -173,7 +173,7 @@ export class MemStorage implements IStorage {
         discountedPrice: null,
         sku: "PW-001",
         category: "custom-orders",
-        images: ["https://images.unsplash.com/photo-1557173823-d6f38e36fae5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80", "https://images.unsplash.com/photo-1550722617-2e52cc9ec18e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80"],
+        images: ["/images/products/prayer-wheel.svg", "/images/products/prayer-wheel.svg"],
         material: "Wood with brass details",
         dimensions: "Height: 30cm, Width: 10cm",
         weight: "0.6kg",
@@ -190,7 +190,7 @@ export class MemStorage implements IStorage {
         discountedPrice: 349,
         sku: "AV-001",
         category: "bodhisattvas",
-        images: ["https://images.unsplash.com/photo-1599639668273-a295bcfd16ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80", "https://images.unsplash.com/photo-1577729571322-0acbfff3e68b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80"],
+        images: ["/images/products/avalokiteshvara.svg", "/images/products/avalokiteshvara.svg"],
         material: "Bronze",
         dimensions: "Height: 30cm, Width: 22cm, Depth: 18cm",
         weight: "3.0kg",
@@ -207,7 +207,7 @@ export class MemStorage implements IStorage {
         discountedPrice: null,
         sku: "MM-001",
         category: "protectors",
-        images: ["https://images.unsplash.com/photo-1566743136192-817d040b8bf9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80", "https://images.unsplash.com/photo-1509024644558-2f56ce76c490?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80"],
+        images: ["/images/products/mahakala.svg", "/images/products/mahakala.svg"],
         material: "Wood with acrylic paint",
         dimensions: "Height: 40cm, Width: 30cm, Depth: 15cm",
         weight: "1.2kg",
@@ -229,7 +229,7 @@ export class MemStorage implements IStorage {
         slug: "symbolism-buddha-statues",
         content: "Buddha statues are more than decorative pieces; they carry deep symbolism in Buddhist tradition. The different hand gestures (mudras) represent various aspects of the Buddha's teachings. For example, the earth-touching right hand represents the moment of enlightenment, while hands placed in the lap signify meditation. The elongated earlobes remind us of the Buddha's royal past and his rejection of material wealth. The serene smile and half-closed eyes demonstrate the perfect balance between meditation and engagement with the world...",
         excerpt: "Understanding the meaning behind different Buddha poses and what they represent in Buddhist tradition.",
-        coverImage: "https://images.unsplash.com/photo-1530254843304-219aac509830?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80",
+        coverImage: "/images/blog/buddha-symbolism.svg",
         author: "Tenzin Norbu",
         published: true,
         createdAt: new Date("2023-05-15")
@@ -239,7 +239,7 @@ export class MemStorage implements IStorage {
         slug: "healing-sound-singing-bowls",
         content: "Tibetan singing bowls have been used for centuries for meditation and healing. When played, these bowls create a range of harmonics that are believed to entrain brainwaves into more relaxed states. Traditional bowls are made from a seven-metal alloy representing gold, silver, mercury, copper, iron, tin, and lead, though the exact proportions remain a closely guarded secret among master craftsmen. Each metal is associated with a celestial body and particular energy. Modern research has begun to validate the therapeutic effects of these instruments on stress reduction, pain management, and even cellular regeneration...",
         excerpt: "How singing bowls can enhance meditation practice and promote healing through sound vibrations.",
-        coverImage: "https://images.unsplash.com/photo-1519922545699-fee10aaa0a3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80",
+        coverImage: "/images/blog/singing-bowl.svg",
         author: "Karma Rinchen",
         published: true,
         createdAt: new Date("2023-04-28")
@@ -249,7 +249,7 @@ export class MemStorage implements IStorage {
         slug: "meet-master-craftsmen",
         content: "Behind each Old Stupa piece is a master craftsman with decades of experience and devotion to their art. Many of our artisans began training in childhood through the traditional master-apprentice system. Take Pemba Sherpa, for example, who has been creating bronze Buddha statues for over 35 years. He learned the lost-wax casting technique from his father and has refined it to create statues of exceptional detail and spiritual presence. Or Lhamo Dolkar, a thangka painter who creates her own mineral-based pigments using techniques passed down through 15 generations in her family. These craftspeople don't just create objects; they participate in a living tradition that connects them to centuries of Buddhist artistic expression...",
         excerpt: "The stories of our artisans who have dedicated their lives to preserving traditional Buddhist crafts.",
-        coverImage: "https://images.unsplash.com/photo-1570289470121-c1b5b36631a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80",
+        coverImage: "/images/blog/craftsmen.svg",
         author: "Dorje Lama",
         published: true,
         createdAt: new Date("2023-04-10")
@@ -265,7 +265,7 @@ export class MemStorage implements IStorage {
       {
         name: "Sarah J.",
         location: "United States",
-        avatar: "https://randomuser.me/api/portraits/women/45.jpg",
+        avatar: "/images/testimonials/avatar-1.svg",
         rating: 5,
         content: "The Medicine Buddha statue I received is simply beautiful. The detail and expression are remarkable, and I can feel the devotion that went into creating it. It has become the centerpiece of my meditation space.",
         published: true
@@ -273,7 +273,7 @@ export class MemStorage implements IStorage {
       {
         name: "David L.",
         location: "Canada",
-        avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+        avatar: "/images/testimonials/avatar-2.svg",
         rating: 5,
         content: "My singing bowl arrived quickly and securely packaged. The sound is pure and resonant - much better quality than others I've tried. The certificate of authenticity and information about the crafting process was a lovely touch.",
         published: true
@@ -281,7 +281,7 @@ export class MemStorage implements IStorage {
       {
         name: "Emma R.",
         location: "Australia",
-        avatar: "https://randomuser.me/api/portraits/women/68.jpg",
+        avatar: "/images/testimonials/avatar-3.svg",
         rating: 4,
         content: "I'm extremely pleased with my Green Tara statue. The gold plating is exquisite and the gemstone inlays are beautifully done. The communication from Old Stupa was excellent and they were happy to answer all my questions about the symbolism.",
         published: true
