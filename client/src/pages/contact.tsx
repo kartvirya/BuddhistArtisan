@@ -97,8 +97,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-serif font-semibold text-lg mb-1">Phone Number</h3>
-                      <p className="text-gray-600">+977-1-4123456</p>
-                      <p className="text-gray-600">+977 9801234567 (WhatsApp)</p>
+                      <p className="text-gray-600">+977 9803254486</p>
+                      <p className="text-gray-600">+977 9803254486 (WhatsApp)</p>
                     </div>
                   </div>
                   

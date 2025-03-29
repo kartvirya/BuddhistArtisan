@@ -1,6 +1,6 @@
 // This is a standalone script to kill processes on port 5000 before server startup
 // It will try multiple approaches to kill processes to be thorough
-const { execSync } = require('child_process');
+import { execSync } from 'child_process';
 
 console.log('PORT KILLER: Starting forceful kill of processes on port 5000...');
 

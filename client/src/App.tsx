@@ -10,6 +10,7 @@ import About from "@/pages/about";
 import Blog from "@/pages/blog";
 import Contact from "@/pages/contact";
 import MainLayout from "./components/layouts/MainLayout";
+import { CartProvider } from "./context/CartContext";
 
 function Router() {
   return (
@@ -29,10 +30,12 @@ function Router() {
 
 function App() {
   return (
-    <MainLayout>
-      <Router />
-      <Toaster />
-    </MainLayout>
+    <CartProvider>
+      <MainLayout>
+        <Router />
+        <Toaster />
+      </MainLayout>
+    </CartProvider>
   );
 }
 

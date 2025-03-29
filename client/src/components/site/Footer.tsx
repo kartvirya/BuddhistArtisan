@@ -59,7 +59,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <i className="fas fa-phone-alt mr-3 text-[#D4AF37]"></i>
-                <span className="text-gray-400">+977-1-4123456</span>
+                <span className="text-gray-400">+977 9803254486</span>
               </li>
               <li className="flex items-center">
                 <i className="fas fa-envelope mr-3 text-[#D4AF37]"></i>
@@ -67,7 +67,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <i className="fab fa-whatsapp mr-3 text-[#D4AF37]"></i>
-                <span className="text-gray-400">+977 9801234567</span>
+                <span className="text-gray-400">+977 9803254486</span>
               </li>
             </ul>
           </div>

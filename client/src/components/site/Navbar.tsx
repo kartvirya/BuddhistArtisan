@@ -112,7 +112,7 @@ const Navbar = () => {
                   <div className="pt-4 border-t">
                     <div className="flex items-center space-x-2 py-2 px-4">
                       <i className="fas fa-phone-alt"></i>
-                      <span>+977-1-4123456</span>
+                      <span>+977 9803254486</span>
                     </div>
                     <div className="flex items-center space-x-2 py-2 px-4">
                       <i className="fas fa-envelope"></i>
