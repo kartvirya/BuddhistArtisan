@@ -5,7 +5,7 @@ import Home from "@/pages/home";
 import Shop from "@/pages/shop";
 import Product from "@/pages/product";
 import Cart from "@/pages/cart";
-import Checkout from "@/pages/checkout";
+import Checkout from "@/pages/checkout-new"; // Using the new demo checkout page
 import About from "@/pages/about";
 import Blog from "@/pages/blog";
 import Contact from "@/pages/contact";

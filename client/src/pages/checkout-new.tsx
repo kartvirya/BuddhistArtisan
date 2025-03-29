@@ -12,7 +12,6 @@ import { Separator } from '@/components/ui/separator';
 import { formatPrice } from '@/lib/utils';
 import { useLocation } from 'wouter';
 import { useToast } from '@/hooks/use-toast';
-import { apiRequest } from '@/lib/queryClient';
 
 // Form schema
 const checkoutSchema = z.object({
@@ -32,7 +31,7 @@ type CheckoutFormValues = z.infer<typeof checkoutSchema>;
 
 // Order Summary Component for demo purposes
 const OrderSummary = ({ shippingDetails }: { shippingDetails: CheckoutFormValues }) => {
-  const { clearCart } = useCart();
+  const { clearCart, cartItems, cartTotal } = useCart();
   const { toast } = useToast();
   const [, setLocation] = useLocation();
   const [isProcessing, setIsProcessing] = useState(false);
@@ -41,12 +40,38 @@ const OrderSummary = ({ shippingDetails }: { shippingDetails: CheckoutFormValues
     setIsProcessing(true);
 
     try {
-      // Simulate API call for demo
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      // Send order to server
+      const response = await fetch('/api/create-order', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          amount: cartTotal,
+          items: cartItems,
+          customer: {
+            name: `${shippingDetails.firstName} ${shippingDetails.lastName}`,
+            email: shippingDetails.email,
+            phone: shippingDetails.phone,
+            address: shippingDetails.address,
+            city: shippingDetails.city,
+            state: shippingDetails.state,
+            postalCode: shippingDetails.postalCode,
+            country: shippingDetails.country,
+            notes: shippingDetails.notes || '',
+          }
+        }),
+      });
+      
+      if (!response.ok) {
+        throw new Error('Failed to create order');
+      }
+      
+      const orderData = await response.json();
       
       toast({
         title: "Order Placed Successfully",
-        description: "Thank you for your purchase! This is a demo order.",
+        description: `Thank you for your purchase! Your order #${orderData.orderId} has been confirmed.`,
       });
       
       clearCart();
@@ -174,7 +199,7 @@ const Checkout = () => {
               <div className={`w-8 h-8 rounded-full flex items-center justify-center mb-2 ${step >= 2 ? 'bg-[#800000] text-white' : 'bg-gray-200 text-gray-500'}`}>
                 2
               </div>
-              <span className="text-sm">Payment</span>
+              <span className="text-sm">Confirmation</span>
             </div>
           </div>
         </div>
@@ -341,7 +366,7 @@ const Checkout = () => {
                           type="submit" 
                           className="w-full bg-[#800000] hover:bg-[#D4AF37]"
                         >
-                          Continue to Payment
+                          Continue to Confirmation
                         </Button>
                       </div>
                     </form>
@@ -437,7 +462,7 @@ const Checkout = () => {
               <div className="mt-6 p-4 bg-[#F5F5DC] rounded-md text-sm">
                 <p className="flex items-start">
                   <i className="fas fa-shield-alt text-[#D4AF37] mt-1 mr-2"></i>
-                  Your payment information is encrypted and secure. We never store your full credit card details.
+                  <span>This is a demo site. No actual orders will be processed.</span>
                 </p>
               </div>
             </div>

@@ -1,17 +1,6 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
-import Stripe from "stripe";
 import { storage } from "./storage";
-
-// Check if Stripe API key is available
-if (!process.env.STRIPE_SECRET_KEY) {
-  console.warn('STRIPE_SECRET_KEY not found, payment functionality will not work properly');
-}
-
-// Set up Stripe only if the API key is available
-const stripe = process.env.STRIPE_SECRET_KEY ? 
-  new Stripe(process.env.STRIPE_SECRET_KEY, { apiVersion: "2025-02-24.acacia" }) : 
-  undefined;
 
 // Create a health check route for Vercel
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -152,8 +141,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  // Stripe payment integration
-  app.post("/api/create-payment-intent", async (req, res) => {
+  // Demo order processing endpoint (no payment processing)
+  app.post("/api/create-order", async (req, res) => {
     try {
       const { amount, items, customer } = req.body;
       
@@ -163,10 +152,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
         customerName: customer?.name || "Guest",
         customerEmail: customer?.email || "guest@example.com",
         customerPhone: customer?.phone || "",
-        status: "pending",
+        status: "confirmed", // Demo mode - order is automatically confirmed
         total: amount,
         shippingAddress: customer || {},
-        paymentIntentId: "",
+        paymentIntentId: `demo_${Date.now()}`, // Demo order ID
       });
       
       // Create items for the order
@@ -182,39 +171,18 @@ export async function registerRoutes(app: Express): Promise<Server> {
         }
       }
       
-      // Check if Stripe is available
-      if (!stripe) {
-        console.warn("Stripe is not configured. Using mock payment intent for development.");
-        // For development only - return a mock client secret
-        // In production, this should be properly set up with actual Stripe integration
-        const mockClientSecret = `dev_pi_${Math.random().toString(36).substring(2, 15)}`;
-        
-        // Update the order with a placeholder payment intent ID
-        await storage.updateOrderPaymentIntent(order.id, `dev_${Date.now()}`);
-        
-        return res.json({ 
-          clientSecret: mockClientSecret,
-          isDevelopment: true
-        });
-      }
+      // For demo purposes, simulate a slight delay
+      await new Promise(resolve => setTimeout(resolve, 500));
       
-      // If Stripe is properly configured, create a real payment intent
-      const paymentIntent = await stripe.paymentIntents.create({
-        amount: Math.round(amount * 100), // Convert to cents
-        currency: "usd",
-        metadata: {
-          orderId: order.id.toString(),
-        },
-        receipt_email: customer?.email,
+      // Return success response
+      res.status(201).json({ 
+        success: true,
+        orderId: order.id,
+        message: "Demo order created successfully",
       });
-      
-      // Update the order with the payment intent ID
-      await storage.updateOrderPaymentIntent(order.id, paymentIntent.id);
-      
-      res.json({ clientSecret: paymentIntent.client_secret });
     } catch (error: any) {
-      console.error("Error processing payment intent:", error);
-      res.status(500).json({ message: "Error processing payment: " + error.message });
+      console.error("Error processing order:", error);
+      res.status(500).json({ message: "Error processing order: " + error.message });
     }
   });
 
