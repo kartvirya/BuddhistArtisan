@@ -1,0 +1,111 @@
+Create a Buddhist Handicraft E-commerce Website
+Title: Old Stupa – Handmade Buddhist Statues & Art
+
+Overview:
+Create a modern, responsive e-commerce website for Old Stupa, a business specializing in handmade Buddhist statues, singing bowls, and spiritual crafts. The site should reflect tradition, spirituality, and authenticity, ensuring an engaging experience for customers worldwide.
+
+1. Design & Theme
+Color Palette: Earthy tones (gold, maroon, beige, white) for a spiritual and elegant look.
+
+Typography: Elegant serif fonts for headings, clean sans-serif for body text.
+
+Imagery: High-resolution images of handmade statues, artisans at work, and Buddhist symbols.
+
+Layout: Minimalist and user-friendly with clear navigation.
+
+2. Homepage Features
+Hero Section:
+
+Full-width banner with an image of artisans crafting a statue.
+
+Overlay text: "Best Handmade Buddhist Statues – Crafted with Love & Devotion"
+
+CTA Button: "Explore Now"
+
+Product Categories (Grid Display):
+
+Buddhas
+
+Bodhisattvas
+
+Gurus
+
+Protectors
+
+Singing Bowls
+
+Custom Orders
+
+Why Trust Us (Icon-Based Highlights)
+
+✅ 100% Handmade
+
+✅ Made by Local Artisans
+
+✅ Worldwide Free Delivery
+
+✅ Certificate of Authenticity
+
+✅ Social Responsibility (Supports Monasteries & Schools)
+
+Customer Testimonials (Carousel Slider)
+
+3. Product Pages
+Product Image Gallery (Zoom & 360° View)
+
+Description (Handcrafted Process, Symbolism, Materials Used)
+
+Price & Add to Cart
+
+Shipping Details & Estimated Delivery Time
+
+Customer Reviews & Ratings
+
+"Similar Products" Recommendation
+
+4. About Us Page
+Story of Old Stupa – Passion for Buddhist craftsmanship.
+
+Meet the Artisans – Profiles & stories of local craftsmen.
+
+Our Mission – Empowering local communities & preserving heritage.
+
+5. Blog Section
+Articles on Buddhist culture, statue meanings, and meditation.
+
+SEO-optimized content for organic traffic.
+
+6. Contact & Support
+Location: Bouddha, Kathmandu
+
+Contact Form (with captcha)
+
+WhatsApp & Email Integration
+
+FAQ Section
+
+7. E-Commerce Features
+Secure Checkout (Stripe, PayPal, Bank Transfer)
+
+Multi-Currency Support
+
+Wishlist & Compare Feature
+
+Customer Accounts & Order Tracking
+
+8. SEO & Performance
+Mobile-friendly & fast loading.
+
+Structured data & rich snippets for search visibility.
+
+Alt text for all images & meta descriptions.
+
+9. Footer Section
+Quick Links: Privacy Policy, Terms & Conditions, Shipping Policy
+
+Social Media Icons
+
+Payment Methods Accepted
+
+Newsletter Subscription
+
